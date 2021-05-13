@@ -3,7 +3,7 @@ import {
     select,
     place,
     visitReduce
-} from './utils'
+} from './utils.js'
 
 export const buildArrow = (from, to) => (origin, target) => place(to, select(from, origin), target)
 
